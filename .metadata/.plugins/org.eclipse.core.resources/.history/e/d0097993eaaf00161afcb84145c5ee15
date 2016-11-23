@@ -1,0 +1,30 @@
+package StringProgram;
+
+import java.util.Scanner;
+
+public class swappingwords {
+
+	
+
+	public static void main(String[] args) {
+       
+		
+	   System.out.println("Enter the full name");	
+       Scanner sc=new Scanner(System.in);
+       String s1=sc.nextLine();
+       
+       
+       
+       String[] s2=s1.split("\\s");
+       
+       
+       
+       
+       
+       System.out.println(s2[2].substring(0,1).toUpperCase()+" "+s2[0]+" "+s2[1]+".");
+
+       
+          
+	}
+
+}

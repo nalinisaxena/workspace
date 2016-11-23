@@ -1,0 +1,14 @@
+package StringProgram;
+
+public class reversestring {
+
+	
+
+	public static void main(String[] args) {
+
+
+	StringBuffer sb=new StringBuffer("nalini ");
+	System.out.println(sb.reverse());
+	}
+
+}

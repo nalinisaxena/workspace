@@ -1,0 +1,23 @@
+package iodemo;
+
+import java.io.File;
+
+public class directdemo {
+
+	
+public static void main(String[] args) {
+		
+	   File f=new File("");
+	   
+	   String[] s=f.list();
+	   
+	   for(String s1:s)
+	   {
+		   System.out.println(s1);
+	   }
+		
+
+
+	}
+
+}

@@ -1,0 +1,59 @@
+package StringProgram;
+
+public class percentagechars {
+
+	public static void main(String[] args) {
+		
+		String s="Tiger Runs @ The Speed Of 100 km/hour.";
+		
+		int totalchar=s.length();
+		
+		//System.out.println(totalchar);
+		
+		int uppercaselatters=0;
+		int lowercaselatters=0;
+		int digit=0;
+		int other=0;
+		
+		for(int i=0;i<s.length();i++)
+		{
+			char ch=s.charAt(i);
+			
+			if(Character.isUpperCase(ch))
+			{
+				uppercaselatters++;
+			}
+			else if(Character.isLowerCase(ch))
+			{
+				lowercaselatters++;
+			}
+			else if(Character.isDigit(ch))
+			{
+				digit++;
+			}
+			else
+			{
+				other++;
+			}
+		}
+		
+		double uppercaselatterper=(uppercaselatters*100.0)/totalchar;
+		
+		double lowercaselatterper=(lowercaselatters*100.0)/totalchar;
+		
+		double digitper=(digit*100.0)/totalchar;
+		
+		double otherper=(other*100.0)/totalchar;
+		
+		System.out.println(uppercaselatterper);
+		System.out.println(lowercaselatterper);
+		System.out.println(digitper);
+		System.out.println(otherper);
+		
+		
+
+         
+		
+	}
+
+}

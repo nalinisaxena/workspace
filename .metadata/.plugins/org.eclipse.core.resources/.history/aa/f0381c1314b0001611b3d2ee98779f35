@@ -1,0 +1,56 @@
+package iodemo;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.PrintWriter;
+
+
+public class deleteduplicate {
+
+	
+
+	public static void main(String[] args) throws Exception {
+
+            BufferedReader br1=new BufferedReader(new FileReader("/home/nalini/input.txt"));
+            
+            PrintWriter pw=new PrintWriter("oput.txt");
+            
+            String line=br1.readLine();
+            
+            while(line!=null)
+            {
+            	boolean available=false;
+            	BufferedReader br2=new BufferedReader(new FileReader("oput.txt"));
+            	
+            	String traget=br2.readLine();
+            	
+            	while(traget!=null)
+            	{
+            		if(line.equals(traget))
+            		{
+            			available=true;
+            			break;
+            			
+            		}
+            		
+            		traget=br2.readLine();
+            	}
+            	
+            	if(available==false)
+            	{
+            		pw.println(line);
+            		pw.flush();
+            	}
+            	line=br1.readLine();
+            
+            
+            pw.flush();
+            br1.close();
+            br2.close();
+            pw.close();
+            
+            }
+	}
+
+}

@@ -1,0 +1,31 @@
+package AppletDemo;
+
+import java.applet.Applet;
+import java.awt.Button;
+import java.awt.Graphics;
+import java.awt.TextField;
+
+public class CalculatorDemo extends Applet {
+	
+	public void init()
+	{
+		TextField t=new TextField();
+		add(t);
+		t.setBounds(20, 20, 400, 200);
+		
+		Button bt1=new Button("7");
+		add(bt1);
+		bt1.setBounds(20, 240, 80, 40);
+		
+		
+	
+		setLayout(null);
+		setSize(500,500);
+	}
+	
+	public void paint(Graphics g)
+	{
+		
+	}
+
+}

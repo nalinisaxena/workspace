@@ -1,0 +1,33 @@
+package ExceptionHandDemo;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class trywithresource {
+
+	
+
+	public static void main(String[] args) {
+
+                    try
+                    {
+                    	String str;
+                    	
+                    	BufferedReader br=new BufferedReader(new FileReader("abc.txt"));
+                    	
+                    	while((str=br.readLine())!=null)
+                    			{
+                    		        System.out.println(str);
+                    			}
+                    	br.close();
+                    	
+                    }
+                    
+                    catch(IOException ie)
+                    {
+                    	System.out.println("Exception");
+                    }
+	}
+
+}

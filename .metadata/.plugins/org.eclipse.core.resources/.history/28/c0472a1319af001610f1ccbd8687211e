@@ -1,0 +1,23 @@
+package StringProgram;
+
+import java.util.Scanner;
+
+public class WordCount1 {
+
+
+	public static void main(String[] args) {
+
+
+		System.out.println("Enter the string");
+		Scanner sc=new Scanner(System.in);
+		
+		String str=sc.nextLine();
+		
+		String[] words=str.split(" ");
+		
+		System.out.println("Number of words to be count:"+words.length);
+		
+		
+	}
+
+}

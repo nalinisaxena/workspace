@@ -1,0 +1,35 @@
+package StringProgram;
+
+import java.util.Scanner;
+
+public class SwappingTwoString {
+
+	
+
+	public static void main(String[] args) {
+		
+        Scanner sc=new Scanner(System.in);
+
+
+		System.out.println("enter the first string");
+		
+        String s1=sc.nextLine();
+        
+        System.out.println("enter the second string");
+        
+        String s2=sc.nextLine();
+        
+        System.out.println("Before swapping s1 and s2:"+s1+" "+s2);
+        
+        s1=s1+s2;
+        
+        s2=s1.substring(0, s1.length()-s2.length());
+        
+        s1=s1.substring(s2.length());
+        
+        System.out.println("After the swapping s1 and s2:"+s1+" "+s2);
+              
+        
+	}
+
+}

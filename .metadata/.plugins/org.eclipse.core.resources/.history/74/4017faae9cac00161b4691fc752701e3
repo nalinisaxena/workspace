@@ -1,0 +1,26 @@
+package ComparatorDemo;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Demo {
+
+	
+public static void main(String[] args) {
+	
+	ArrayList al=new ArrayList();
+	
+	al.add(new Student(1001,"Ipone",15000));
+	al.add(new Student(101,"Android",18000));
+	al.add(new Student(200,"Testing",20000));
+	
+	System.out.println("Sorting by name...");
+	
+	Collections.sort(al,new NameCompare);
+	
+	
+
+               
+	}
+
+}

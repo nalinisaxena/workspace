@@ -1,0 +1,17 @@
+package StringProgram;
+
+public class percentagechars {
+
+	public static void main(String[] args) {
+		
+		String s="i am 26 year old @@@###";
+		
+		int totalchar=s.length();
+		
+		System.out.println(totalchar);
+
+         
+		
+	}
+
+}

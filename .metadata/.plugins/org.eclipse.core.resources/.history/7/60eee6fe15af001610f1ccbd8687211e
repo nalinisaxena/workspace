@@ -1,0 +1,25 @@
+package StringProgram;
+
+import java.util.HashMap;
+
+public class DuplicateWordsCount {
+
+
+	public static void main(String[] args) {
+		
+		String str="Hello hii hello hiii";
+		String []words=str.split(" ");
+
+
+		HashMap<String,Integer> hm=new HashMap<String,Integer>();
+		
+		for(String word:words)
+		{
+			System.out.println(word);
+		}
+		
+		
+		
+	}
+
+}

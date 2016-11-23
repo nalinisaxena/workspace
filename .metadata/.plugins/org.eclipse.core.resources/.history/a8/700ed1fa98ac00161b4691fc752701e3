@@ -1,0 +1,27 @@
+package comparabledemo;
+
+import java.util.ArrayList;
+
+public class sortdemo {
+
+	
+
+	public static void main(String[] args) {
+
+                 ArrayList<Emp> al=new ArrayList<Emp>();
+                 
+                 al.add(new Emp(11,"ABC",23000));
+                 al.add(new Emp(18,"pqr",40000));
+                 al.add(new Emp(13,"XYZ",20000));
+                 
+                 Collections.sort(al);
+                 
+                 for(Emp st:al)
+                 {
+                	 System.out.println(st.id+" "+st.name+" "+st.salary);
+                 }
+                 
+                 
+	}
+
+}

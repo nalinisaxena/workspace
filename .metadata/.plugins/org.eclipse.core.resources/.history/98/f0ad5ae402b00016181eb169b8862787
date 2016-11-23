@@ -1,0 +1,48 @@
+package StringProgram;
+
+import java.util.Scanner;
+
+public class swappingwords {
+
+	
+
+	public static void main(String[] args)throws IndexOutOfBoundsException {
+       
+		
+	   System.out.println("Enter the full name");	
+       Scanner sc=new Scanner(System.in);
+       String s1=sc.nextLine();
+       
+       
+       String[] s2=s1.split("\\s");
+       
+       
+       if(s2[1]==null)
+       {
+    	   s2[0] = s2[0].substring(0,1).toUpperCase() + s2[0].substring(1).toLowerCase();
+           s2[2] = s2[2].substring(0,1).toUpperCase() + s2[2].substring(1).toLowerCase();
+
+
+           System.out.println(s2[2]+" "+s2[0]); 
+       }
+       
+       else
+       {
+    	            
+
+           s2[0] = s2[0].substring(0,1).toUpperCase() + s2[0].substring(1).toLowerCase();
+           s2[1] = s2[1].substring(0,1).toUpperCase() + s2[1].substring(1).toLowerCase();
+           s2[2] = s2[2].substring(0,1).toUpperCase() + s2[2].substring(1).toLowerCase();
+
+           System.out.println(s2[2]+" "+s2[0]+" "+s2[1]+".");
+    	  
+    	   
+           
+       }
+       
+      
+
+       
+         }
+
+}

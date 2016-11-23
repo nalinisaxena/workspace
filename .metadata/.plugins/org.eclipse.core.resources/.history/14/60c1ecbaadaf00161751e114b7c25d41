@@ -1,0 +1,27 @@
+package StringProgram;
+
+import java.util.Scanner;
+
+public class swappingwords {
+
+	
+
+	public static void main(String[] args) {
+       
+		
+	   System.out.println("Enter the first name");	
+       Scanner sc=new Scanner(System.in);
+       String s1=sc.nextLine();
+       
+       System.out.println("Enter the middle name");
+       String s2=sc.nextLine();
+       
+       System.out.println("Enter the last name");
+       String s3=sc.nextLine();
+       
+       
+       System.out.println(s1+" "+s2+" "+s3);
+       
+	}
+
+}

@@ -1,0 +1,16 @@
+package StringProgram;
+
+public class inttostring {
+
+	public static void main(String[] args) {
+		
+		int i=10;
+		
+		String s=Integer.toString(i);
+		
+		System.out.println(s);
+
+               
+	}
+
+}
